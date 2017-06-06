@@ -7,7 +7,7 @@ let win;
 app.on('ready', () => {
   win = new BrowserWindow({
     darkTheme: true,
-    height: 285,
+    height: 300,
     width: 383
   });
 
