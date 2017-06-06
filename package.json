@@ -1,0 +1,14 @@
+{
+  "name": "electron-vader-no",
+  "version": "1.0.0",
+  "description": "Nooooo",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "1.6.10"
+  },
+  "author": "Steven Gregory",
+  "license": "ISC"
+}
