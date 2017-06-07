@@ -2,7 +2,7 @@
   "name": "electron-vader-no",
   "version": "1.0.0",
   "description": "Nooooo",
-  "main": "src/main.js",
+  "main": "src/app/main.js",
   "scripts": {
     "start": "electron ."
   },
