@@ -2,6 +2,7 @@ const {app, BrowserWindow} = require('electron');
 const path = require('path');
 const url = require('url');
 
+require('dotenv').config();
 require('electron-reload')(__dirname, {
   electron: path.join(__dirname, '../node_modules', '.bin', 'electron')
 });
@@ -15,11 +16,19 @@ app.on('ready', () => {
     width: 383
   });
 
-  win.loadURL(url.format({
-    pathname: 'localhost:4200',
-    protocol: 'http:',
-    slashes: true
-  }));
+  if (process.env.PACKAGE === 'true') {
+    win.loadURL(url.format({
+      pathname: path.join(__dirname, '../dist/index.html'),
+      protocol: 'file:',
+      slashes: true
+    }));
+  } else {
+    win.loadURL(url.format({
+      pathname: process.env.HOST,
+      protocol: 'http:',
+      slashes: true
+    }));
+  }
 
   win.on('closed', () => {
     win = null;

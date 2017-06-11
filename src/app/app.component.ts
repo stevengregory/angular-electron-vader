@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  darthVader = '../../assets/nooo.mp3';
+  darthVader = 'assets/nooo.mp3';
 
   constructor() {}
 
