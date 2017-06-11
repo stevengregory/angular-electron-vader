@@ -1,28 +1,29 @@
 # Angular Electron Vader
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
+A super simple app built on [Angular](https://angular.io/) & [Electron](https://electron.atom.io/) and best used in dire situations.
 
-## Development server
+![Darth Vader](http://i.imgur.com/Xtc42gu.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Getting Started
 
-## Code scaffolding
+1. Clone it `git clone https://github.com/stevengregory/angular-electron-vader.git`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+1. Get in `cd angular-electron-vader`
+
+1. Run `npm i`
+
+## Configuration
+
+The `.env` file `PACKAGE` variable sets where Electron will run. If `PACKAGE` is set to false, it will run from the dev server. Otherwise, Electron will run from the `dist/` directory, which needs to be generated in the build step. Additionally, the `BASEURL` will need to be updated for your project.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `npm run build` to build the project and set the `BASEURL`. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+## Development Server
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `npm start` to kick off the dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Running end-to-end tests
+## Running Electron
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Run `electron .` to start Electron.
