@@ -22,8 +22,12 @@ Run `npm run build` to build the project and set the `BASEURL`. The build artifa
 
 ## Development Server
 
-Run `npm start` to kick off the dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm start` to kick off the dev server. The app will automatically reload if you change any of the source files.
 
 ## Running Electron
 
-Run `electron .` to start Electron.
+Run `electron .` to start Electron. If running from the dev server, this command will need to be run in a separate terminal.
+
+## Create Package
+
+Run `npm run package:mac` to run the build and package the application. The desktop installer will be created in the `package/` directory.

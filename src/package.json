@@ -1,0 +1,7 @@
+{
+  "name": "angular-electron-vader",
+  "productName": "Darth Vader",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "electron/entry.js"
+}

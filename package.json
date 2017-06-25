@@ -10,7 +10,8 @@
     "electron": "electron .",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "package:mac": "npm run build && electron-packager ./dist --electron-version 1.6.10 --platform darwin --icon ./dist/assets/vader.icns --out ./package --overwrite"
   },
   "private": true,
   "dependencies": {
@@ -26,6 +27,7 @@
     "core-js": "^2.4.1",
     "dotenv": "^4.0.0",
     "electron": "^1.6.10",
+    "electron-packager": "^8.7.1",
     "electron-reload": "^1.2.1",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
